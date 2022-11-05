@@ -1,0 +1,38 @@
+/* .container1{ 
+    width: 100vw;
+    height: 10vh;
+    border: 0px solid blue; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+/* .note1{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border: 1px solid #cecdcd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #e0e0e0;
+} */
+
+.input1[type=text]{
+    border: none;
+    font-size: 15px;
+}
+/* .text{
+    position: relative;
+    left: 19px;
+    outline: none;
+} */
+/* .icons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 190px;
+} */

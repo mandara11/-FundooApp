@@ -1,0 +1,72 @@
+.container4{
+    width: 100vw;
+    height: 10vh;
+    border: 1px solid #cecdcd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    position: relative;
+    top: 0px;
+    margin-top: 0px !important;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 20px;
+
+}
+.googlekeep{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 12px;
+}
+.keep{
+    color: #5f6368;
+    font-family: "Product Sans",Arial,sans-serif;
+    font-size: 22px;
+    opacity: 1;
+    font-weight: 500;
+    position: relative;
+    left: 18px;
+}
+.second{
+    width: 52%;
+    height: 70%;
+    background-color: #F0F0F0;
+    border: 1px solid #E0E0E0;
+    border-radius:8px ;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 125px;
+    box-shadow: 2px 2px 2px #e0e0e0;
+}
+.searchicon{
+    position: relative;
+    left: 15px;
+    top: 10PX;
+}
+.inputbase{
+    position: relative;
+    left: 35px;
+    top: 7px;
+}
+.third{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 240px;
+}
+.fourth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 320px;
+}

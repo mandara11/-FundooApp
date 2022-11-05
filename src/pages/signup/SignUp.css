@@ -1,0 +1,267 @@
+ .mainu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.containeru {
+    display: flex;
+    height: 90vh;
+    width: 55vw;
+    position: relative;
+    top: 20px;
+    border: 1px solid lightgray;
+    flex-direction: row;
+    border-radius: 8px;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    box-shadow: 10px;
+}
+
+.child1u {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 55%;
+    border: 0px solid red;
+}
+.titleu {
+    position: relative;
+    top: 30px;
+    left: 38px;
+}
+
+span.a {
+    color: hsl(210, 79%, 46%);
+    font-size: 23px;
+    font-weight: 540;
+}
+
+span.b {
+    color: #FF0000;
+    font-size: 23px;
+    font-weight: 520;
+}
+
+span.c {
+    color: #FFA500;
+    font-size: 23px;
+    font-weight: 520;
+}
+
+span.d {
+    color: hsl(210, 79%, 46%);
+    font-size: 23px;
+    font-weight: 520;
+}
+
+span.e {
+    color: #008000;
+    font-size: 23px;
+    font-weight: 520;
+}
+
+span.f {
+    color: #FF0000;
+    font-size: 23px;
+    font-weight: 520;
+}
+
+.txt1u{
+    position: relative;
+    top: 50px;
+    left: 38px;
+    color: #202124;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+    margin-bottom: 0;
+    margin-top: 0;
+    word-break: break-word;
+}
+.nameu{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    border: 0px solid red;
+    position: relative;
+    top: 80px;
+}
+#inputu{
+    border: 0px solid #e0e0e0;
+    border-radius: 4px;
+    color: #202124;
+    width: 78%;
+    font-size: 14px;
+    background-color: transparent;
+    display: block;
+    font: 400 13px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+.inputu{
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #202124;
+    width: 78%;
+    font-size: 14px;
+    height: 20px;
+    background-color: transparent;
+    display: block;
+    font: 400 13px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+.firstnameu{
+    width: 44%;
+    position: relative;
+    left: 38px;
+}
+.lastnameu{
+    width: 44%;
+    position: relative;
+    left: 45px;
+}
+
+.usernameu{
+    width: 100%;
+    display: flex;
+    min-width: 0%;
+    position: relative;
+    top: 85px;
+    left: 38px;
+}
+.text2u{
+    position: relative;
+    top: 90px;
+    left: 38px;
+    font-size: 12px;
+    word-break: break-word;
+    color: #5f6368;
+}
+.text3u{
+    color: #1a73e8;
+    position:relative;
+    top: 110px;
+    left: 38px;
+    font-size: 14px;
+    font-weight: 550;
+}
+.passwordtextu{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    border: 0px solid black;
+    position: relative;
+    top: 150px;
+}
+.password1u{
+    width: 44%;
+    position: relative;
+    left: 38px;
+}
+.confirmu{
+    width: 44%;
+    position: relative;
+    left: 45px;
+}
+.text4u{
+    position: relative;
+    top: 132px;
+    left: 38px;
+    font-size: 12px;
+    word-break: break-word;
+    color: #5f6368;
+}
+.showpasswordu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 0px solid red;
+    position: relative;
+    top: 140px;
+    left: 38px;
+    width: 80%;
+    height: 8%;
+}
+.checku{
+    width: 15px;
+}
+.text5u{
+    color: #202124;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+    position:relative;
+    top: 11px;
+    left: 20px;
+}
+.bottomu{
+    display: flex;
+    flex-direction: row;
+    border: 0px solid blue;
+    width: 100%;
+    position: relative;
+    top: 180px;   
+}
+.signininsteadu{
+    position: relative;
+    left: 38px;
+    background-color: #e9eef5;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 10px;
+    letter-spacing: .0107142857em;
+    text-transform: none;
+    border-radius: 2px;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+#signu{
+    color: #1a73e8;
+    font-weight: 550;
+    border: 0;
+}
+.signu:hover {
+    background-color: #c1d3eb;
+  }
+#next1u{
+    position: absolute;
+    left: 150px;
+    color: #ffff;
+    background-color: #1a73e8;
+    font-weight: 500;
+    letter-spacing: .25px;
+    width: 72px;
+    height: 34px;
+    text-align: center;
+    border: 0;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+
+
+.child2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 45%;
+    border: 0px solid blue;
+
+}
+
+.child2 img {
+    width: 90%;
+    height: 42%;
+    display: flex;
+    position: relative;
+    top: 120px;
+    left: 3px;
+}
+
+.child2text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #202124;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+    position: relative;
+    top: 125px;
+    line-height: 1.5em;
+    opacity: 0.9;
+}  

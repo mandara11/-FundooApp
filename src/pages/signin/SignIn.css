@@ -1,0 +1,181 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    width: 33vw;
+    border: 1px solid #E0E0E0;
+    flex-direction: column;
+    border-radius: 8px;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    box-shadow: 10px;
+}
+
+.title {
+    position: relative;
+    top: 30px;
+}
+
+span.a {
+    color: hsl(210, 79%, 46%);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+span.b {
+    color: #FF0000;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+span.c {
+    color: #FFA500;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+span.d {
+    color: hsl(210, 79%, 46%);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+span.e {
+    color: #008000;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+span.f {
+    color: #FF0000;
+    font-size: 25px;
+    font-weight: 500;
+}
+.signintxt{
+    position: relative;
+    top: 40px;
+    color: #202124;
+    font-size: 24px;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    font-weight: 400;
+}
+.txt2{
+    position: relative;
+    top: 50px;
+    color: #202124;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+}
+.email{
+    display: flex;
+    width: 100%;
+    min-width: 0%;
+    position: relative;
+    top: 80px;
+    left: 40px;
+}
+.input{
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #202124;
+    font-size: 16px;
+    width: 340px;
+    height: 20px;
+    margin: 1px 1px 0 1px;
+    padding: 13px 15px;
+    background-color: transparent;
+    display: block;
+    font: 400 16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+.forgetemail{
+    position: relative;
+    top: 88px;
+    display: flex;
+    justify-content: flex-start;
+    left: 42px;
+}
+button{
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 550;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+    border: 0;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+.password{
+    display: flex;
+    min-width: 0%;
+    position: relative;
+    top: 95px;
+    left: 40px;
+}
+.forgetpassword{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    left: 42px;
+}
+.learnmore{
+    position: relative;
+    top: 130px;
+    right: 10px;
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.4286;
+}
+.learnmore a{
+    display: flex;
+    justify-content: flex-start;
+    right: 138px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+}
+.create{
+    align-items: flex-start;
+    display: flex;
+    box-flex: 0;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 180px;
+}
+.createbutton{
+    font-weight: 550;
+    position: relative;
+    left: 38px;
+}
+#next{
+    color: #ffff;
+    background-color: #1a73e8;
+    font-weight: 500;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+    position: relative;
+    left: 62px; 
+}
+.createbutton:hover {
+    background-color: #c1d3eb;
+  }
