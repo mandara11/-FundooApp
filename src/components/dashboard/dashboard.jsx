@@ -8,16 +8,33 @@ import TakeNote2 from '../../pages/takenote2/TakeNote2'
 import TakeNote3 from '../../pages/takenote3/TakeNote3'
 import { getNotesList } from '../../services/dataService'
 import "../dashboard/dashboard.css"
+import Grid from '@mui/material/Grid';
+import { makeStyles } from '@mui/styles'
+
+const useStyles = makeStyles({
+  middle: {
+    maxWidth: '80vw',
+    height: "auto",
+    border: "0px solid red",
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    marginLeft: '250px !important',
+    justifyContent: 'flex-start',
+    flexGrow:'1',
+  }
+})
 
 function Dashboard() {
+  const classes = useStyles()
 
   const [toggle, setToggle] = useState(false)
 
-  const[toggle1, setToggle1]= useState(false)
+  const [toggle1, setToggle1] = useState(false)
 
-  const[noteChoice, setNoteChoice] = useState("Notes")
+  const [noteChoice, setNoteChoice] = useState("Notes")
 
-  const listenToDrawer=(hover)=>{
+  const listenToDrawer = (hover) => {
     setNoteChoice(hover)
   }
 
@@ -32,21 +49,25 @@ function Dashboard() {
 
   useEffect(() => {
     getNote()
-  },[noteChoice])
+  }, [noteChoice])
+
+  const autoRefresh = () => {
+    getNote()
+  }
 
   const getNote = () => {
     getNotesList().then((response) => {
-      let filterNotes=[]
-      if(noteChoice==='Archive'){
-        filterNotes=response.data.data.data.filter((notes)=>{
-          if(notes.isArchived===true && notes.isDeleted===false){
+      let filterNotes = []
+      if (noteChoice === 'Archive') {
+        filterNotes = response.data.data.data.filter((notes) => {
+          if (notes.isArchived === true && notes.isDeleted === false) {
             return notes
           }
         })
       }
-      else if(noteChoice==='Notes'){
-        filterNotes=response.data.data.data.filter((notes)=>{
-          if(notes.isArchived===false && notes.isDeleted===false){
+      else if (noteChoice === 'Notes') {
+        filterNotes = response.data.data.data.filter((notes) => {
+          if (notes.isArchived === false && notes.isDeleted === false) {
             return notes
           }
         })
@@ -59,41 +80,41 @@ function Dashboard() {
       //     }
       //   })
       // }
-      else if(noteChoice==="Trash"){
-        filterNotes=response.data.data.data.filter((notes)=>{
-          if(notes.isArchived===false && notes.isDeleted===true){
+      else if (noteChoice === "Trash") {
+        filterNotes = response.data.data.data.filter((notes) => {
+          if (notes.isArchived === false && notes.isDeleted === true) {
             return notes
           }
         })
       }
       console.log(response)
       setNoteList(filterNotes)
-      console.log(filterNotes,"addedfilter")
+      console.log(filterNotes, "addedfilter")
     })
       .catch((error) => {
         console.log(error)
       })
   }
-  const listenToHeader1=()=>{
+  const listenToHeader1 = () => {
     setToggle1(!toggle1)
   }
 
   return (
     <div>
-      <Headermui  listenToHeader1={listenToHeader1}/>
-      
-      <Drawer1 toggle1={toggle1} listenToDrawer={listenToDrawer}/>
+      <Headermui listenToHeader1={listenToHeader1} />
+
+      <Drawer1 toggle1={toggle1} listenToDrawer={listenToDrawer} />
 
       <div>
         {
           toggle ? <TakeNote2 listenToNote2={listenToNote2} /> : <TakeNote1 listenToNote1={listenToNote1} />
         }
 
-        <div className='middele' style={{ width: "80vw", height: "60vh", border: "0px solid black", display: "flex", flexDirection: "row", flexWrap: "wrap", position: "relative", left: "250px" }}>
+        <Grid container spacing={1} className={classes.middle}>
           {
-            noteList.map((note) => (<TakeNote3 note={note} getNote={getNote} />))
+            noteList.map((note) => (<Grid item lg={2.9} md={4} xs={12} sm={6} ><TakeNote3 note={note} autoRefresh={autoRefresh} /></Grid>))
           }
-        </div>
+        </Grid>
       </div>
     </div>
   )
